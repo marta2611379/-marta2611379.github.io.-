@@ -1,0 +1,212 @@
+@import url(reset.css);
+@import url(header.css);
+@import url(slider.css);
+@import url(main_firstFloor.css);
+@import url(main_secondFloor.css);
+@import url(footer.css);
+@import url(fonts.css);
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.container1 {
+    height: 869px;
+    background-image: url(img/bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: bottom;
+    padding-top: 54px;
+    margin: 0 auto;
+}
+
+.slider_cont1 {
+    /* Style for "Shape 4 co" */
+    background-image: url(img/source_of_icons.png);
+    background-position: -55px 1px;
+    width: 85px;
+    height: 20px;
+    margin: 0 auto;
+    margin-top: 37px;
+}
+
+.slider_cont1:hover {background-position: -55px -20px;}
+
+.play_crcl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    height: 75px;
+    background-image: url(img/Shape_14.png);
+    background-color: rgba(203, 165, 218, 0.8);
+    border-radius: 50%;
+}
+
+.play {
+    width: 22px;
+    height: 25px;
+    background-image: url(img/Shape_15.png);
+    background-repeat: no-repeat;
+}
+
+.o768 {display: none;}
+
+
+
+@media screen and (min-width: 960px) {
+    .o768 {display: none;}
+    .menu_480 {display: none;}
+}
+
+@media screen and (min-width:786px) and (max-width:960px) {
+
+    .container1 {
+        padding-top: 70px;
+        height: 799px;
+    }
+
+    .container {width: 725px;}
+    .menu_480 { display: none;}
+    .o768 {display: block;}
+}
+
+@media screen and (min-width: 480px) and (max-width:786px) {
+    .container {
+        width: 430px;
+        padding-top: 0;
+    }
+
+    .container1 {
+        padding-top: 0;
+        height: 550px;
+    }
+
+    .menu {display: none;}
+
+    .menu_480 {
+        display: block;
+        position: relative;
+    }
+
+    .list_480 {
+        /* Style for "Shape 8" */
+        width: 244px;
+        height: 46px;
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+        border: 1px solid #051116;
+        background-color: rgba(54, 41, 62, 0.9);
+        text-align: center;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .list_480:hover {
+        width: 244px;
+        height: 276px;
+    }
+
+    .li_style_menu480 {
+        width: 100%;
+        height: 46px;
+        box-shadow: inset 0 -1px 0 rgba(105, 82, 114, 0.59);
+    }
+
+    .link_480 {
+        color: #ffffff;
+        font-family: "LeagueGothic";
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 42px;
+        text-transform: uppercase;
+        list-style: none;
+        text-decoration: none;
+        margin-top: 15px;
+        margin-bottom: 14px
+    }
+
+    .li_style_menu480:hover {
+        background-color: rgba(54, 41, 62, 0.94);
+        border-bottom: 0.2px solid #edbfff;
+    }
+
+    .home_link:hover { text-decoration-line: underline;}
+
+    .it_will {
+        font-size: 18px;
+        overflow: hidden;
+    }
+
+    .iphone_480 {
+        background-image: url(img/Iphone.png);
+        width: 192px;
+        height: 304px;
+        margin-top: -9px;
+    }
+
+    .o960 {display: none;}
+    .o768 { display: block;}
+}
+
+
+@media screen and (min-width:320px) and (max-width:480px) {
+    .container { width: 270px;}
+
+    .container1 {
+        height: 517px;
+        padding-top: 70px;
+    }
+
+    .logo {
+        width: 153px;
+        height: 40px;
+        margin-left: 0px;
+        margin-bottom: 26px;
+        padding-top: 0;
+    }
+
+    .menu_480 {
+        display: block;
+        position: relative;
+    }
+
+    .list_480 {
+        min-width: 52px;
+        height: 37px;
+        text-align: center;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .li_style_menu480 {
+        width: 100%;
+        height: 46px;
+    }
+
+    .link_480 {
+        color: #ffffff;
+        font-family: "LeagueGothic";
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 42px;
+        text-transform: uppercase;
+        list-style: none;
+        text-decoration: none;
+        margin-top: 15px;
+        margin-bottom: 14px
+    }
+
+    .home_link:hover {text-decoration-line: underline;}
+
+    .slider_cont1 {
+        margin-top: 81px;
+        margin-bottom: 61px;
+    }
+
+    .menu {display: none;}
+    .o960 {display: none;}
+    .o768 { display: block;}
+
+}
