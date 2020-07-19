@@ -17,7 +17,6 @@
     padding-left: 23px;
 }
 
-
 .pingbuller_and_slider {
     width: 429px;
     height: 314px;
@@ -33,10 +32,8 @@
     width: 427px;
     background-image: url(img/Layer%2060.png);
     background-size: 100% 100%;
-    padding-top: 32px;
-   
+    padding-top: 32px;  
 }
-
 
 .h2_pingbuller {
     width: 215px;
@@ -95,7 +92,6 @@
        background-position: -55px 1px;
 }
 
-
 .second_floor_bottom {
     height: 122px;
     padding-top: 25px;
@@ -106,7 +102,6 @@
     height: 65px;
     margin: 0 auto;
     display: flex;
-
 }
 
 .mark {
@@ -218,4 +213,170 @@
 
 .read_more_here:hover {
     text-shadow: 1px 1px 0 #ffffff;
+}
+
+@media screen and (min-width:786px) and (max-width:960px) {
+    .second_floor_top_container {
+        width: 700px;
+        margin: 0 auto;
+        margin-top: 100px;
+        justify-content: flex-start;
+    }
+
+    .pingbuller_and_slider {
+        width: 313px;
+        margin-right: 0px;
+    }
+
+    .pingbuller {
+        width: 315px;
+        height: 272px;
+        overflow: hidden;
+    }
+
+    .h2_pingbuller {
+        display: block;
+        margin-bottom: 17px;
+        width: 85px;
+        height: 41px;
+        font-size: 24px;
+    }
+
+    
+    .resent_updates {
+        width: 327px;
+        margin-left: 40px;
+    }
+
+    .resent_updates_list {
+        width: 323px;
+        height: 50px;
+    }
+
+    .list_textbox {
+        width: 257px;
+        height: 42px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+}
+
+@media screen and (min-width:480px) and (max-width:786px) {
+
+    .second_floor {height: 1024px;}
+
+    .second_floor_top {
+        height: 790px;
+        display: block;
+    }
+
+    .second_floor_top_container {
+        width: 418px;
+        height: 635px;
+        display: block;
+    }
+
+    .second_floor_bottom { height: 233px;}
+
+    .marks {
+        /* Style for "logos" */
+        width: 345px;
+        height: 154px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .mark {
+        min-width: 90px;
+        height: 65px;
+    }
+
+    .mark5 {
+        background-position: 79% 0%;
+        width: 105px;
+    }
+
+    .resent_updates {
+        height: 261px;
+        width: 337px;
+        margin-top: 32px;
+        margin-left: 40px;
+    }
+
+    .resent_updates_list {overflow: hidden;}
+}
+
+@media screen and (min-width:320px) and (max-width:480px) {
+    .second_floor { height: 1206px;}
+
+    .second_floor_top {
+        height: 794px;
+        display: block;
+    }
+
+    .second_floor_top_container {
+        width: 281px;
+        height: 625px;
+        flex-direction: column;
+    }
+
+    .pingbuller_and_slider {
+        width: 258px;
+        height: 314px;
+        margin-bottom: 51px;
+        z-index: 1;
+    }
+
+    .pingbuller {
+        width: 256px;
+        height: 272px;
+        background-image: url(img/Layer_11_copy_2.png);
+        margin-bottom: 24px;
+        padding-top: 27px;
+        overflow: hidden;
+    }
+
+    .h2_pingbuller {
+        flex-direction: column;
+        width: 85px;
+        height: 42px;
+        font-size: 24px;
+        margin-bottom: 13px;
+    }
+
+    .second_floor_bottom {height: 420px; }
+
+    .marks {
+        width: 237px;
+        height: 294px;
+        margin-left: 22px;
+        margin-bottom: 52px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .mark {
+        min-width: 90px;
+        height: 65px;
+    }
+
+    .mark5 {
+        background-position: 79% 0%;
+        width: 105px;
+    }
+
+    .resent_updates {
+        height: 261px;
+        width: 285px;
+        margin-top: 32px;
+    }
+
+    .resent_updates_list {
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    .list_textbox {min-width: 212px;}
+
 }
